@@ -230,7 +230,7 @@ zeroize = { version = "1.5.4", features = ["alloc"], default-features = false }
 
 # wasmtime and its pinned dependencies
 # these will need to be updated together
-wasmtime = { version = "5.0.1", features = ["cranelift", "pooling-allocator"], default-features = false }
+wasmtime = { version = "6.0.2", features = ["cranelift", "pooling-allocator"], default-features = false }
 cap-std = { version = "1.0.0", default-features = false }
 io-lifetimes = { version = "1.0.0", default-features = false }
 rustix = { version = "0.36.0", features = ["std"], default-features = false }
