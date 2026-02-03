@@ -308,7 +308,7 @@ checksum = "acee9fd5073ab6b045a275b3e709c163dd36c90685219cb21804a147b58dba43"
 dependencies = [
  "async-trait",
  "axum-core",
- "bitflags",
+ "bitflags 1.3.2",
  "bytes",
  "futures-util",
  "headers",
@@ -391,6 +391,12 @@ name = "bitflags"
 version = "1.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
+
+[[package]]
+name = "bitflags"
+version = "2.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "812e12b5285cc515a9c72a5c1d3b6d46a19dac5acfef5265968c166106e31dd3"
 
 [[package]]
 name = "block-buffer"
@@ -618,7 +624,7 @@ version = "4.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f13b9c79b5d1dd500d20ef541215a6423c75829ef43117e1b4d17fd8af0b5d76"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "clap_derive",
  "clap_lex",
  "once_cell",
@@ -1216,7 +1222,7 @@ dependencies = [
  "async-h1",
  "async-std",
  "atty",
- "bitflags",
+ "bitflags 1.3.2",
  "camino",
  "chrono",
  "clap",
@@ -1240,7 +1246,7 @@ dependencies = [
  "http-types",
  "iocuddle",
  "keyring",
- "kvm-bindings",
+ "kvm-bindings 0.6.0",
  "kvm-ioctls",
  "libc",
  "lset",
@@ -1338,7 +1344,7 @@ version = "0.7.1"
 dependencies = [
  "aes-gcm",
  "array-const-fn-init",
- "bitflags",
+ "bitflags 1.3.2",
  "cfg-if 1.0.0",
  "const-default",
  "crt0stack",
@@ -1364,7 +1370,7 @@ dependencies = [
 name = "enarx-shim-sgx"
 version = "0.7.1"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "const-default",
  "crt0stack",
  "gdbstub",
@@ -1820,7 +1826,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f3e372db8e5c0d213e0cd0b9be18be2aca3d44cf2fe30a9d46a65581cd454584"
 dependencies = [
  "base64 0.13.1",
- "bitflags",
+ "bitflags 1.3.2",
  "bytes",
  "headers-core",
  "http",
@@ -2167,17 +2173,24 @@ name = "kvm-bindings"
 version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "efe70e65a5b092161d17f5005b66e5eefe7a94a70c332e755036fc4af78c4e79"
+
+[[package]]
+name = "kvm-bindings"
+version = "0.10.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fa4933174d0cc4b77b958578cd45784071cc5ae212c2d78fbd755aaaa6dfa71a"
 dependencies = [
  "vmm-sys-util",
 ]
 
 [[package]]
 name = "kvm-ioctls"
-version = "0.12.0"
+version = "0.19.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c3a321cabd827642499c77e27314f388dd83a717a5ca716b86476fb947f73ae4"
+checksum = "e013ae7fcd2c6a8f384104d16afe7ea02969301ea2bb2a56e44b011ebc907cab"
 dependencies = [
- "kvm-bindings",
+ "bitflags 2.10.0",
+ "kvm-bindings 0.10.0",
  "libc",
  "vmm-sys-util",
 ]
@@ -2379,7 +2392,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ddebf36d94d93773f02ce68b188d843a27257f27ab058dcf5df5f0e99678b7ef"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "const-default",
  "lset",
  "primordial",
@@ -2407,7 +2420,7 @@ version = "0.22.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e4916f159ed8e5de0082076562152a76b7a1f64a01fd9d1e0fea002c37624faf"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cc",
  "cfg-if 1.0.0",
  "libc",
@@ -2986,7 +2999,7 @@ version = "0.2.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fb5a58c1855b4b6819d59012155603f0b22ad30cad752600aadfcb695265519a"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
 ]
 
 [[package]]
@@ -2995,7 +3008,7 @@ version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "567664f262709473930a4bf9e51bf2ebf3348f2e748ccc50dea20646858f8f29"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
 ]
 
 [[package]]
@@ -3118,7 +3131,7 @@ version = "0.33.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "938a344304321a9da4973b9ff4f9f8db9caf4597dfd9dda6a60b523340a0fff0"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "errno 0.2.8",
  "io-lifetimes 0.5.3",
  "itoa",
@@ -3134,7 +3147,7 @@ version = "0.36.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "db4165c9963ab29e422d6c26fbc1d37f15bace6b2810221f9d925023480fcf0e"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "errno 0.2.8",
  "io-lifetimes 1.0.9",
  "itoa",
@@ -3150,7 +3163,7 @@ version = "0.37.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "62b24138615de35e32031d041a09032ef3487a616d901ca4db224e7d557efae2"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "errno 0.3.1",
  "io-lifetimes 1.0.9",
  "libc",
@@ -3195,7 +3208,7 @@ checksum = "7b4b9743ed687d4b4bcedf9ff5eaa7398495ae14e61cba0a295704edbc7decde"
 name = "sallyport"
 version = "0.7.1"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "gdbstub",
  "goblin",
  "libc",
@@ -3300,7 +3313,7 @@ version = "2.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a332be01508d814fed64bf28f798a146d73792121129962fdf335bb3c49a4254"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "core-foundation",
  "core-foundation-sys",
  "libc",
@@ -3470,7 +3483,7 @@ version = "0.6.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6bb53446a28e5fdc95b554916aca5f3d9317e8f4d3862285ddd4e51cf521e820"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "num-integer",
  "num-traits",
  "rand 0.8.5",
@@ -3687,7 +3700,7 @@ version = "0.25.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f355df185d945435f24c51fda9bf01bea6acb6c0b753e1241e5cc05413a659d4"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "cap-fs-ext",
  "cap-std",
  "fd-lock",
@@ -3861,7 +3874,7 @@ version = "0.3.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f873044bf02dd1e8239e9c1293ea39dad76dc594ec16185d0a1bf31d8dc8d858"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "bytes",
  "futures-core",
  "futures-util",
@@ -4086,11 +4099,11 @@ checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
 name = "vmm-sys-util"
-version = "0.11.1"
+version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "dd64fe09d8e880e600c324e7d664760a17f56e9672b7495a86381b49e4f72f46"
+checksum = "1d1435039746e20da4f8d507a72ee1b916f7b4b05af7a91c093d2c6561934ede"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "libc",
 ]
 
@@ -4170,7 +4183,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "46604ebe82881f99d88095c171eb84ae078c6b2a13f8f8f20ec00da60c8f6faf"
 dependencies = [
  "anyhow",
- "bitflags",
+ "bitflags 1.3.2",
  "cap-rand",
  "cap-std",
  "io-extras 0.17.0",
@@ -4510,7 +4523,7 @@ checksum = "4edae96a8cef2aaf1d2ce42a41814ee1a0fb55c5171de6b6166bd2d6fa2f5b7b"
 dependencies = [
  "anyhow",
  "async-trait",
- "bitflags",
+ "bitflags 1.3.2",
  "thiserror",
  "tracing",
  "wasmtime",
@@ -4728,7 +4741,7 @@ version = "0.31.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "08d5973cb8cd94a77d03ad7e23bbe14889cb29805da1cec0e4aff75e21aebded"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "io-lifetimes 0.5.3",
  "winapi",
 ]
@@ -4739,7 +4752,7 @@ version = "0.35.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "129cd8ee937d535e1a239d9d3c9c0525af0454bc0967d9211a251be062513520"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "io-lifetimes 1.0.9",
  "windows-sys 0.45.0",
 ]
@@ -4775,7 +4788,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "100555a863c0092238c2e0e814c1096c1e5cf066a309c696a87e907b5f8c5d69"
 dependencies = [
  "bit_field",
- "bitflags",
+ "bitflags 1.3.2",
  "rustversion",
  "volatile",
 ]
@@ -4786,7 +4799,7 @@ version = "2.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f81c5c54e5c79ff6e6e230383faf8a014df74751fbb9d60503b0f71e1dbaff4d"
 dependencies = [
- "bitflags",
+ "bitflags 1.3.2",
  "const-default",
 ]
 
