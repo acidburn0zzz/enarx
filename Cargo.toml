@@ -194,7 +194,7 @@ primordial = { version = "0.5.0", default-features = false }
 process_control = { version = "4.0.1", default-features = false }
 protobuf = { version = "3.7.2", default-features = false }
 protobuf-codegen-pure = { version = "2.27.0", default-features = false }
-rand = { version = "0.8.0", features = ["std", "std_rng"], default-features = false }
+rand = { version = "0.9.3", features = ["std", "std_rng"], default-features = false }
 rcrt1 = { version = "2.5.0", default-features = false }
 ring = { version = "0.16.20", features = ["std"], default-features = false }
 rsa = { version = "0.7.2", default-features = false }
