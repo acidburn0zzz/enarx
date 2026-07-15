@@ -194,10 +194,10 @@ primordial = { version = "0.5.0", default-features = false }
 process_control = { version = "4.0.1", default-features = false }
 protobuf = { version = "3.7.2", default-features = false }
 protobuf-codegen-pure = { version = "2.27.0", default-features = false }
-rand = { version = "0.9.3", features = ["std", "std_rng"], default-features = false }
+rand = { version = "0.10.2", features = ["std", "std_rng"], default-features = false }
 rcrt1 = { version = "2.5.0", default-features = false }
-ring = { version = "0.16.20", features = ["std"], default-features = false }
-rsa = { version = "0.7.2", default-features = false }
+ring = { version = "0.17.3", features = ["std"], default-features = false }
+rsa = { version = "0.8.2", default-features = false }
 rustls = { version = "0.20.6", default-features = false }
 rustls-pemfile = { version = "1.0.0", default-features = false }
 sallyport = { version = "0.7.1", path = "crates/sallyport", default-features = false }
@@ -231,9 +231,9 @@ zeroize = { version = "1.5.4", features = ["alloc"], default-features = false }
 # wasmtime and its pinned dependencies
 # these will need to be updated together
 wasmtime = { version = "6.0.2", features = ["cranelift", "pooling-allocator"], default-features = false }
-cap-std = { version = "1.0.0", default-features = false }
+cap-std = { version = "3.0.0", default-features = false }
 io-lifetimes = { version = "1.0.0", default-features = false }
-rustix = { version = "0.36.0", features = ["std"], default-features = false }
+rustix = { version = "1.1.4", features = ["std"], default-features = false }
 wasi-common = { version = "5.0.1", default-features = false }
 wasmtime-wasi = { version = "5.0.1", features = ["sync"], default-features = false }
 wiggle = { version = "5.0.1", default-features = false }
