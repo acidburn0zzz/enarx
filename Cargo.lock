@@ -1210,7 +1210,7 @@ dependencies = [
  "drawbridge-type",
  "http",
  "mime",
- "rustls",
+ "rustls 0.20.9",
  "serde_json",
  "ureq",
  "url",
@@ -1252,7 +1252,7 @@ dependencies = [
  "log",
  "mime",
  "openidconnect",
- "rustls",
+ "rustls 0.20.9",
  "rustls-pemfile",
  "semver",
  "serde",
@@ -1372,7 +1372,7 @@ dependencies = [
  "rand 0.10.3",
  "ring 0.17.14",
  "rsa 0.8.2",
- "rustls",
+ "rustls 0.21.12",
  "rustls-pemfile",
  "sallyport",
  "semver",
@@ -1423,7 +1423,7 @@ dependencies = [
  "pkcs8",
  "ring 0.17.14",
  "rustix 1.1.5",
- "rustls",
+ "rustls 0.21.12",
  "sallyport",
  "sec1",
  "serde",
@@ -1789,7 +1789,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d2411eed028cdf8c8034eaf21f9915f956b6c3abec4d4c7949ee67f0721127bd"
 dependencies = [
  "futures-io",
- "rustls",
+ "rustls 0.20.9",
  "webpki",
 ]
 
@@ -3512,14 +3512,26 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.20.8"
+version = "0.20.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fff78fc74d175294f4e83b28343315ffcfb114b156f0185e9741cb5570f50e2f"
+checksum = "1b80e3dec595989ea8510028f30c408a4630db12c9cbb8de34203b89d6577e99"
 dependencies = [
  "log",
  "ring 0.16.20",
  "sct",
  "webpki",
+]
+
+[[package]]
+name = "rustls"
+version = "0.21.12"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3f56a14d1f48b391359b22f731fd4bd7e43c97f3c50eee276f3aa09c94784d3e"
+dependencies = [
+ "log",
+ "ring 0.17.14",
+ "rustls-webpki",
+ "sct",
 ]
 
 [[package]]
@@ -3529,6 +3541,16 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d194b56d58803a43635bdc398cd17e383d6f71f9182b9a192c127ca42494a59b"
 dependencies = [
  "base64 0.21.0",
+]
+
+[[package]]
+name = "rustls-webpki"
+version = "0.101.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8b6275d1ee7a1cd780b64aca7726599a1dbc893b1e64144529e55c3c2f745765"
+dependencies = [
+ "ring 0.17.14",
+ "untrusted 0.9.0",
 ]
 
 [[package]]
@@ -4416,7 +4438,7 @@ dependencies = [
  "flate2",
  "log",
  "once_cell",
- "rustls",
+ "rustls 0.20.9",
  "serde",
  "serde_json",
  "url",
