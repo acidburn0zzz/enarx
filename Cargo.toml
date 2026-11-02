@@ -198,7 +198,7 @@ rand = { version = "0.10.2", features = ["std", "std_rng"], default-features = f
 rcrt1 = { version = "2.5.0", default-features = false }
 ring = { version = "0.17.3", features = ["std"], default-features = false }
 rsa = { version = "0.8.2", default-features = false }
-rustls = { version = "0.20.6", default-features = false }
+rustls = { version = "0.21.12", default-features = false }
 rustls-pemfile = { version = "1.0.0", default-features = false }
 sallyport = { version = "0.7.1", path = "crates/sallyport", default-features = false }
 shared = { version = "0.7.1", path = "crates/shared", default-features = false }
